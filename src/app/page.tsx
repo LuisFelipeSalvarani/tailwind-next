@@ -10,14 +10,14 @@ import { SettingsTabs } from './components/SettingsTabs'
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
+      <h1 className="font-medium text-3xl text-zinc-900">Settings</h1>
 
       <SettingsTabs />
 
       <div className="mt-6 flex flex-col">
-        <div className="flex justify-between items-center pb-5 border-b border-zinc-200">
+        <div className="flex items-center justify-between border-zinc-200 border-b pb-5">
           <div className="space-y-1">
-            <h2 className="text-lg font-medium text-zinc-900">Personal info</h2>
+            <h2 className="font-medium text-lg text-zinc-900">Personal info</h2>
             <span className="text-sm text-zinc-500">
               Update your photo and personal details here.
             </span>
@@ -32,16 +32,16 @@ export default function Home() {
 
         <form
           id="settings"
-          className="mt-6 flex flex-col w-full gap-5 divide-y divide-zinc-200"
+          className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200"
         >
-          <div className="grid gap-3 grid-cols-form">
+          <div className="grid grid-cols-form gap-3">
             <label
               htmlFor="firstName"
-              className="text-sm font-medium text-zinc-700"
+              className="font-medium text-sm text-zinc-700"
             >
               Name
             </label>
-            <div className="grid gap-6 grid-cols-2">
+            <div className="grid grid-cols-2 gap-6">
               <Input.Root>
                 <Input.Control id="firstName" defaultValue="Luis Felipe" />
               </Input.Root>
@@ -52,10 +52,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-3 grid-cols-form pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="email"
-              className="text-sm font-medium text-zinc-700"
+              className="font-medium text-sm text-zinc-700"
             >
               Email address
             </label>
@@ -71,13 +71,13 @@ export default function Home() {
             </Input.Root>
           </div>
 
-          <div className="grid gap-3 grid-cols-form pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="photo"
-              className="text-sm font-medium text-zinc-700"
+              className="font-medium text-sm text-zinc-700"
             >
               Your photo
-              <span className="text-sm font-normal text-zinc-500 block mt-0.5">
+              <span className="mt-0.5 block font-normal text-sm text-zinc-500">
                 This will be displayed on your profile.
               </span>
             </label>
@@ -89,8 +89,8 @@ export default function Home() {
             </FileInput.Root>
           </div>
 
-          <div className="grid gap-3 grid-cols-form pt-5">
-            <label htmlFor="role" className="text-sm font-medium text-zinc-700">
+          <div className="grid grid-cols-form gap-3 pt-5">
+            <label htmlFor="role" className="font-medium text-sm text-zinc-700">
               Role
             </label>
             <Input.Root>
@@ -98,10 +98,10 @@ export default function Home() {
             </Input.Root>
           </div>
 
-          <div className="grid gap-3 grid-cols-form pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="country"
-              className="text-sm font-medium text-zinc-700"
+              className="font-medium text-sm text-zinc-700"
             >
               Country
             </label>
@@ -112,10 +112,10 @@ export default function Home() {
             <div />
           </div>
 
-          <div className="grid gap-3 grid-cols-form pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="timezone"
-              className="text-sm font-medium text-zinc-700"
+              className="font-medium text-sm text-zinc-700"
             >
               Timezone
             </label>
@@ -130,15 +130,15 @@ export default function Home() {
             <div />
           </div>
 
-          <div className="grid gap-3 grid-cols-form pt-5">
-            <label htmlFor="bio" className="text-sm font-medium text-zinc-700">
+          <div className="grid grid-cols-form gap-3 pt-5">
+            <label htmlFor="bio" className="font-medium text-sm text-zinc-700">
               Bio
-              <span className="text-sm font-normal text-zinc-500 block mt-0.5">
+              <span className="mt-0.5 block font-normal text-sm text-zinc-500">
                 Write a short introduction.
               </span>
             </label>
             <div className="space-y-3">
-              <div className="grid gap-3 grid-cols-2">
+              <div className="grid grid-cols-2 gap-3">
                 <Select placeholder="" defaultValue="normal">
                   <SelectItem value="normal" text="Normal Text" />
                   <SelectItem value="md" text="Markdown" />
@@ -172,13 +172,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-3 grid-cols-form pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="projects"
-              className="text-sm font-medium text-zinc-700"
+              className="font-medium text-sm text-zinc-700"
             >
               Portifolio projects
-              <span className="text-sm font-normal text-zinc-500 block mt-0.5">
+              <span className="mt-0.5 block font-normal text-sm text-zinc-500">
                 Share a few snippets of your work.
               </span>
             </label>

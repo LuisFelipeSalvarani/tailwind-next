@@ -17,7 +17,7 @@ export function ImagePreview() {
 
   if (previewURL === null) {
     return (
-      <div className="bg-violet-50 flex size-16 items-center justify-center rounded-full">
+      <div className="flex size-16 items-center justify-center rounded-full bg-violet-50">
         <User className="size-8 text-violet-500" />
       </div>
     )

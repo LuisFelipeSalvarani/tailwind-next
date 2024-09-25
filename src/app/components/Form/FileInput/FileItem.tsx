@@ -49,15 +49,15 @@ export function FileItem({ name, size, state }: FileItemProps) {
       {state === 'error' ? (
         <div className="flex flex-1 flex-col items-start gap-1">
           <div className="flex flex-col">
-            <span className="text-sm font-medium text-error-700">
+            <span className="font-medium text-error-700 text-sm">
               Upload failed, please try again.
             </span>
-            <span className="text-sm text-error-600">{name}</span>
+            <span className="text-error-600 text-sm">{name}</span>
           </div>
 
           <button
             type="button"
-            className="text-sm font-semibold text-error-700 hover:text-error-900"
+            className="font-semibold text-error-700 text-sm hover:text-error-900"
           >
             Try again
           </button>
@@ -65,7 +65,7 @@ export function FileItem({ name, size, state }: FileItemProps) {
       ) : (
         <div className="flex flex-1 flex-col items-start gap-1">
           <div className="flex flex-col">
-            <span className="text-sm font-medium text-zinc-700">{name}</span>
+            <span className="font-medium text-sm text-zinc-700">{name}</span>
             <span className="text-sm text-zinc-500">{formatBytes(size)}</span>
           </div>
 
@@ -76,7 +76,7 @@ export function FileItem({ name, size, state }: FileItemProps) {
                 style={{ width: state === 'complete' ? '100%' : '80%' }}
               />
             </div>
-            <span className="text-sm font-medium text-zinc-700">
+            <span className="font-medium text-sm text-zinc-700">
               {state === 'complete' ? '100%' : '80%'}
             </span>
           </div>
