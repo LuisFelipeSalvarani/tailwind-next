@@ -1,6 +1,7 @@
 import * as FileInput from '@/app/components/Form/FileInput/index'
 import * as Input from '@/app/components/Input'
-import { Mail, UploadCloud, User } from 'lucide-react'
+import { Mail } from 'lucide-react'
+import { Select } from './components/Form/Select'
 import { SettingsTabs } from './components/SettingsTabs'
 
 export default function Home() {
@@ -110,6 +111,7 @@ export default function Home() {
             >
               Country
             </label>
+            <Select />
             <div />
           </div>
 
