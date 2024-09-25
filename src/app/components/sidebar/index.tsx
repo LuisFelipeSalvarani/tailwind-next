@@ -9,7 +9,7 @@ import {
   SquareStack,
   Users,
 } from 'lucide-react'
-import * as Input from '../input'
+import * as Input from '../Input'
 import { Logo } from './Logo'
 import { NavItem } from './NavItem'
 import { Profile } from './Profile'
